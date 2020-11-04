@@ -1,0 +1,87 @@
+/* 公共部分 */
+
+input,
+input:focus{
+	border: 1px #ccc solid  !important;
+	box-shadow: none !important;/* 阴影设置 */
+	outline: none !important;
+}
+.input-group-btn.btn:focus,
+.input-group-btn.btn.active:focus,
+.input-group-btn:active:focus,
+.input-group-btn.btn.focus,
+.input-group-btn:active.focus,
+.input-group-btn.btn.active.focus{
+	outline: none !important;
+	box-shadow: none !important;
+}
+.input-group-btn.btn:hover{
+	background: #337ab7 !important;
+	background-color: #2e6da4 !important;;
+}
+
+/* 导航栏样式 */
+.navbar-default .navbar-brand{
+	padding-left: 50px;
+	position: relative;
+}
+.navbar-default i{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	font-size: 28px;
+	color: #CC6600;
+}
+.navbar-nav > .active > a{
+	font-size: 16px;
+	font-weight: bolder;
+	
+}
+#href > ul > .active> a{
+	background: none;
+}
+#href > ul > .active> a:hover{
+	color: #333;
+}
+.input-group >input,
+.input-group >input:focus{
+	border: 1px #ccc solid;
+	box-shadow: none;/* 阴影设置 */
+	outline: none;
+}
+.input-group-btn.btn:focus,
+.input-group-btn.btn.active:focus,
+.input-group-btn:active:focus,
+.input-group-btn.btn.focus,
+.input-group-btn:active.focus,
+.input-group-btn.btn.active.focus{
+	outline: none;
+	box-shadow: none;
+}
+.input-group-btn.btn:hover{
+	background: #337ab7;
+	background-color: #2e6da4;;
+}
+/* 页脚部分 */
+
+.footer{
+	background: #080808;
+	text-align: center;
+	color:#FFF;
+	padding-top: 10px;
+	padding-top: 10px;
+}
+.footer > .bodyfooter>span{
+	font-size: 30px;
+	
+}
+.footer >.bodyfooter> p > a{
+	color: white;
+}
+.footer >.bodyfooter> p >a:hover{
+	color:#CC6600;
+	text-decoration: none;
+}
+.footer > .bodyfooter{
+	padding: 20px 0 30px 0;
+}

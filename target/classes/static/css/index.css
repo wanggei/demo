@@ -1,0 +1,133 @@
+/* 导航栏样式 */
+.navbar-default .navbar-brand{
+	padding-left: 50px;
+	position: relative;
+}
+.navbar-default i{
+	position: absolute;
+	top: 25px;
+	left: 15px;
+	font-size: 28px;
+	color: #CC6600;
+}
+.navbar-nav > .active > a{
+	font-size: 16px;
+	font-weight: bolder;
+	
+}
+#href > ul > .active> a{
+	background: none;
+}
+#href > ul > .active> a:hover{
+	color: #333;
+}
+.input-group >input,
+.input-group >input:focus{
+	border: 1px #ccc solid;
+	box-shadow: none;/* 阴影设置 */
+	outline: none;
+}
+.input-group-btn.btn:focus,
+.input-group-btn.btn.active:focus,
+.input-group-btn:active:focus,
+.input-group-btn.btn.focus,
+.input-group-btn:active.focus,
+.input-group-btn.btn.active.focus{
+	outline: none;
+	box-shadow: none;
+}
+.input-group-btn.btn:hover{
+	background: #337ab7;
+	background-color: #2e6da4;;
+}
+
+/* 轮播图样式 */
+#carousel{
+	margin-top: -20px;
+}
+#carousel > #itmes > .item{
+	
+	background-position: center center !important;
+	background-size: cover !important;
+}
+
+/* //设置媒体查询使屏幕在不同的宽度设置不同的高度 */
+@media (min-width:769px) {
+	#carousel > #itmes > .item{
+		height: 410px !important;
+	}
+}
+@media (max-width:768px) {
+	#carousel > #itmes > .item{
+		height: auto !important;
+	}
+}
+/* 缩略图样式 */
+.page-header{
+	border-bottom: 2px solid #888;
+}
+.page-header > h3{
+	position: relative;
+}
+
+.page-header > h3 > a{
+	position: absolute;
+	right: 0;
+	font-size: 16px;
+	line-height: 26.4px;
+	color: #888;
+}
+.page-header > h3 > a:hover{
+	text-decoration: none;
+	color: #0086B3;
+	
+}
+
+.thumbnail > .caption > a > h3{
+	margin-top: 0px !important;
+	font-size: 18px;
+	padding-top: 10px;
+}
+.thumbnail > .caption > a:hover{
+	text-decoration: none;
+	color: red;
+	
+}
+
+.thumbnail > .caption >p{
+	font-size: 12px;
+}
+.thumbnail{
+	border: 1px solid #FFF;
+	padding: 10px;
+	border-radius: 0;
+}
+.thumbnail:hover{
+	box-shadow: .5px .5px 1px #ddd;/* 阴影 */
+	border: 1px solid #ccc;
+	outline: 2px #EEEEEE solid;/* 轮廓颜色 */
+}
+
+/* 页脚部分 */
+
+.footer{
+	background: #080808;
+	text-align: center;
+	color:#FFF;
+	padding-top: 10px;
+	padding-top: 10px;
+}
+.footer > .bodyfooter>span{
+	font-size: 30px;
+	
+}
+.footer >.bodyfooter> p > a{
+	color: white;
+}
+.footer >.bodyfooter> p >a:hover{
+	color:#CC6600;
+	text-decoration: none;
+}
+.footer > .bodyfooter{
+	padding: 20px 0 30px 0;
+}

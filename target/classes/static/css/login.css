@@ -1,0 +1,64 @@
+
+.navbar-default i{
+	position: absolute;
+	top: 25px;
+	left: 15px;
+	font-size: 28px;
+	color: #CC6600;
+}
+.loginhtml{
+	margin-top: 20px;
+	height: 300px;
+}
+#test{
+	border: 1px #CCCCCC solid !important;
+	padding: 0;
+	margin-top: -10px;
+	
+}
+
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus{
+	border: none;
+}
+.login-col > li > a{
+	border-bottom: none;
+	border-radius: 0;
+	background-color: #E6E6E6;
+	padding: 20px 0 20px 0;
+	color: #000000;
+	
+}
+
+#longin,#regin{
+	padding: 20px 60px 0 60px;
+}
+
+#longin #dd p  a{
+	font-size: 12px;
+	
+}
+#longin #dd p  a:hover{
+	text-decoration: none;
+	
+}
+#longin #dd p span{
+	font-size: 26px;
+}
+#longin > div{
+	padding-bottom: 10px;
+}
+#longin > .formlogin >div{
+	margin-bottom: 15.5px;
+}
+.btn-lg, .btn-group-lg > .btn{
+	border-radius: 0;
+}
+.nav-tabs.nav-justified > li > a{
+	border-radius: 0;
+}
+#regin >.formlogin >div{
+	margin-bottom: 20.3px;
+}
+.footer{
+	margin-top: 226px;
+}

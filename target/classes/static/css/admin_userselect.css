@@ -1,0 +1,79 @@
+/* 公共部分 */
+
+input,
+input:focus{
+	border: 1px #ccc solid  !important;
+	box-shadow: none !important;/* 阴影设置 */
+	outline: none !important;
+}
+.input-group-btn.btn:focus,
+.input-group-btn.btn.active:focus,
+.input-group-btn:active:focus,
+.input-group-btn.btn.focus,
+.input-group-btn:active.focus,
+.input-group-btn.btn.active.focus{
+	outline: none !important;
+	box-shadow: none !important;
+}
+.input-group-btn.btn:hover{
+	background: #337ab7 !important;
+	background-color: #2e6da4 !important;;
+}
+.select_title{
+	height: 30px;
+	background-color:#031F8D ;
+	color: #fff;
+	line-height: 30px;
+	padding-left: 20px;
+	margin-right: 10px;
+}
+#form_contral{
+	margin-top: 10px;
+}
+#button_group{
+	margin-right: 10px;
+}
+#button_group > button,
+#pager > button
+{
+	width: 100px;
+	outline: none;
+	margin-left: 10px;
+}
+#button_group > button:hover,
+#pager > button:hover
+{
+	background-color:#031F8D ;
+	color: white;
+	border-radius: 0;	
+}
+
+/* 表单样式 */
+#table_contral{
+	margin-right: 10px;
+	margin-top: 20px;
+}
+#table_contral > table tr{
+	text-align: center;
+	
+}
+.btn-xs, .btn-group-xs > .btn {
+    border-radius: 0;
+}
+#table_contral > table tr:first-child{
+	background-color: #031F8D;
+	color: white;
+}
+
+/* 分页样式 */
+#pager{
+	margin-right: 10px;
+}
+#pager >p >span{
+	color: #031F8D;
+	font-weight: bolder;
+}
+#pager >p{
+	height: 30px;
+	line-height: 30px;
+}

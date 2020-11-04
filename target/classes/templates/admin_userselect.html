@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+	<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+	  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		  <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.css}">
+		  <link rel="stylesheet" type="text/css" href="../css/iconfont.css" th:href="@{/css/iconfont.css}"/>
+		<link rel="stylesheet" type="text/css" href="../css/admin_userselect.css" th:href="@{/css/admin_userselect.css}"/>
+		  <link rel="stylesheet" type="text/css" href="./lib/bootstrap-select-1.13.12/css/bootstrap-select.min.css" th:href="@{/webjars/bootstrap-select/1.12.0/css/bootstrap-select.css}"/>
+		  <title></title>
+	  </head>
+	  <body>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="select_title">
+						搜索
+					</div> 
+				</div>
+				<div class="row">
+					<form class="form-inline" id="form_contral" th:action="@{/admin/blurselect.html}">
+					  <div class="form-group">
+					    <label >用户名:</label>
+					    <input type="text" class="form-control" placeholder="请输入用户名" name="stuid">
+					  </div>
+					   &nbsp
+					 
+					  <button type="submit" class="btn btn-default">查询</button>
+					</form>
+				</div>
+				<div class="row">
+					<div class="pull-right" id="button_group">
+						<button type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#adduser">添加用户</button>
+						<button type="button" class="btn btn-sm btn-default" id="delalluser">批量删除</button>
+						<button type="button" class="btn btn-sm btn-default">导出</button>
+						<button type="button" class="btn btn-sm btn-default">导入</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="table-responsive" id="table_contral">
+						<table class="table table-bordered table-hover table-condensed">
+							<tr>
+								<td><input type="checkbox" class="clickall" onclick="chall();"></td>
+								<td>用户名</td>
+								<td>学号</td>
+								<td>密码</td>
+								<td>角色</td>
+								<td>登录时间</td>
+								<td>用户操作</td>
+							</tr>
+							<tr th:each="userOne : ${userPage.list}">
+								<input type="hidden" value="" id="uid" th:value="${userOne.id}"/>
+								<td><input type="checkbox" class="clickone" onclick="chone();" th:value="${userOne.id}"></td>
+								<td th:text="${userOne.id}">王伟</td>
+								<td th:text="${userOne.username}">T201820931</td>
+								<td th:text="${userOne.password}">123456</td>
+								<td>
+									<span th:each="roles : ${userOne.roles}">
+										<span th:text="${roles.name}">ss</span>
+									</span>
+								</td>
+								<td th:text="${#dates.format(userOne.add_data,'yyyy-MM-dd')}">2020-3-18</td>
+								<td><a href="#" role="button" class="btn btn-primary btn-xs" data-target="#updateUser" data-toggle="modal" th:href="@{/admin/admin_userupdate.html(uid=${userOne.id})}">编辑</a> <a href="#" role="button" class="btn btn-danger btn-xs" id="sub"  onclick="delsubmit(this)">删除</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="row">
+					<div id="pager">
+						<p class="pull-left">总共 <span th:text="${userPage.total}">90</span>条记录 当前<span th:text="${userPage.pageNum}">1</span>/<span th:text="${userPage.pages}">9</span>页</p>
+						<a href="${pageContext.request.contextPath}/admin_userselect.html?pagesize=${userPage.navigateLastPage}&pagenum=10" class="btn btn-sm pull-right btn-default" type="button" th:href="@{/admin/admin_userselect.html(pagesize=${userPage.navigateLastPage},pagenum=10)}">尾页</a>
+						<a href="${pageContext.request.contextPath}/admin_userselect.html?pagesize=${userPage.nextPage}&pagenum=10" class="btn btn-sm pull-right btn-default" type="button" th:href="@{/admin/admin_userselect.html(pagesize=${userPage.nextPage},pagenum=10)}">下一页</a>
+						<a href="${pageContext.request.contextPath}/admin_userselect.html?pagesize=${userPage.prePage}&pagenum=10" class="btn btn-sm pull-right btn-default" type="button" th:href="@{/admin/admin_userselect.html(pagesize=${userPage.prePage},pagenum=10)}">上一页</a>
+						<a href="${pageContext.request.contextPath}/admin_userselect.html?pagesize=${userPage.navigateFirstPage}&pagenum=10" class="btn btn-sm pull-right btn-default" type="button" id="homepage" th:href="@{/admin/admin_userselect.html(pagesize=${userPage.navigateFirstPage},pagenum=10)}">首页</a>
+					</div>
+				</div>
+				<!-- Modal adduser-->
+				<div class="modal fade" id="adduser" tabindex="-1" >
+				  <div class="modal-dialog" >
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" ><span >&times;</span></button>
+				        <h4 class="modal-title" >添加用户</h4>
+				      </div>
+				      <div class="modal-body">
+							<form action="" method="post"  id="addUserForm" th:action="@{/admin/adduser.html}">
+								<div class="form-group">
+									<label>学号:</label>
+									<input type="text" name="username" placeholder="学号" class="form-control"/>
+								</div>
+
+								<div class="form-group">
+									<label>密码:</label>
+									<input type="password" name="password" placeholder="密码" class="form-control"/>
+								</div>
+								<div class="form-group">
+									<label>关联的权限:</label>
+									<select class="selectpicker form-control" multiple name="select">
+										<option value="1" th:each=" roles,loopStatus: ${roList}" th:text="${roles.name}" th:value="${loopStatus.count}">教师</option>
+
+									</select>
+								</div>
+								<div class="form-group">
+									<label>常用的手机号码</label>
+									<input type="text" name="phone" placeholder="手机号码" class="form-control"/>
+								</div>
+								<div class="form-group">
+									<label>邮箱:</label>
+									<input type="email" name="email" placeholder="邮箱" class="form-control"/>
+								</div>
+							</form>
+					  </div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary" id="addUserBtn">添加用户</button>
+						</div>
+							
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Modal updateUser-->
+				<div class="modal fade" id="updateUser" tabindex="-1" >
+				  <div class="modal-dialog" >
+				    <div class="modal-content">
+						<!-- 这里是动态改变的内容 -->
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<script src="./lib/Jquery/jquery-3.4.1.min.js" th:src="@{/webjars/jquery/3.0.0/jquery.js}"></script>
+			<script src="./lib/bootstrap/js/bootstrap.js" th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.js}"></script>
+			<script src="./lib/bootstrap-select-1.13.12/js/bootstrap-select.min.js" th:src="@{/webjars/bootstrap-select/1.12.0/js/bootstrap-select.js}"></script>
+			<script src="./lib/bootstrap-select-1.13.12/js/i18n/defaults-zh_CN.min.js" th:src="@{/webjars/bootstrap-select/1.12.0/js/i18n/defaults-zh_CN.min.js}"></script>
+			<script src="../js/admin_userselect.js" type="text/javascript" th:src="@{/js/admin_user.js}"></script>
+	</body>
+</html>

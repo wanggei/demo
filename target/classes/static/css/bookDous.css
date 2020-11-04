@@ -1,0 +1,52 @@
+/* 轮播图样式 */
+#carousel{
+	margin-top: -20px;
+}
+#carousel > #itmes > .item{
+	
+	background-position: center center !important;
+	background-size: cover !important;
+}
+
+/* //设置媒体查询使屏幕在不同的宽度设置不同的高度 */
+@media (min-width:769px) {
+	#carousel > #itmes > .item{
+		height: 410px !important;
+	}
+}
+@media (max-width:768px) {
+	#carousel > #itmes > .item{
+		height: auto !important;
+	}
+}
+
+/* 设置div的大小位置 */
+#tetx{
+	width: 700px;
+	height: 305px;
+	border: 3px solid #E6E6E6;
+	margin-top: 60px;
+	margin-left: -50px;
+}
+/* 设置图片的大小 */
+#tetx >img{
+	width: 330px;
+	height: 300px;
+	
+}
+/* 设置文本的位置 */
+.text_son >.p1{
+	padding-top: 20px;
+}
+.text_son > p{
+	padding-top: 20px;
+	padding-left: 10px;
+}
+.text_son > p:last-child{
+	    padding-top: 78px !important;
+	    padding-left: 142px;
+}
+/* 页脚 */
+.footer{
+	margin-top: 135px;
+}

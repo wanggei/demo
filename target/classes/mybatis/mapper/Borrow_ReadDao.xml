@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="org.webjars.demo.dao.Borrow_ReadDao">
+  	<select id="selectUsinfo" resultType="org.webjars.demo.model.Borrow_Read">
+  	
+  		select * from borrow_read where readname=#{username}
+  	
+  	</select>
+  	<delete id="updateByBe">
+  		
+  		delete from borrow_read where bookname=#{bookname} and readname=#{username}
+  		
+  	</delete>
+
+	<insert id="addInfo">
+		insert into borrow_read (bookname, readname)
+		value
+		<foreach collection="objects" item="book" separator="," open="(" close=")">
+				#{book}
+		</foreach>
+	</insert>
+  </mapper>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e15d7500-d1ce-4468-a5cc-4784f27453ad" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wangwei@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wangwei@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wangwei@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wangwei: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wangwei@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wangwei: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven\repository" />
+        <option name="mavenHome" value="D:/maven/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.5.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bkE6dICzUcnWlTaygZSpPLi0F9" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\demo02\src\main\resources\templates" />
+      <recent name="C:\demo02\src\main\resources\static" />
+      <recent name="C:\demo02\src\main\resources\templates\admin" />
+      <recent name="C:\demo02\src\main\resources\public" />
+      <recent name="C:\demo02\src\main\resources\static\html" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.webjars.demo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\demo02\src\main\resources\static\js" />
+      <recent name="C:\demo02\src\main\resources\static\css" />
+      <recent name="C:\demo02\src\main\resources\templates" />
+      <recent name="C:\demo02\src\main\java\org\webjars\demo\controller" />
+      <recent name="C:\demo02\src\main\java\org\webjars\demo\untils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration name="DemoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.webjars.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.webjars.demo" />
+      <option name="MAIN_CLASS_NAME" value="org.webjars.demo.DemoApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo02" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.webjars.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DemoApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e15d7500-d1ce-4468-a5cc-4784f27453ad" name="Default Changelist" comment="" />
+      <created>1589167516339</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589167516339</updated>
+      <workItem from="1589167518916" duration="584000" />
+      <workItem from="1589198361226" duration="3436000" />
+      <workItem from="1589250663306" duration="3280000" />
+      <workItem from="1589254448065" duration="752000" />
+      <workItem from="1589331003463" duration="4061000" />
+      <workItem from="1589350605606" duration="4711000" />
+      <workItem from="1589417544673" duration="15672000" />
+      <workItem from="1589502608045" duration="1805000" />
+      <workItem from="1589506696021" duration="364000" />
+      <workItem from="1589507109481" duration="16000" />
+      <workItem from="1589590380167" duration="95000" />
+      <workItem from="1589595750601" duration="14000" />
+      <workItem from="1589596000645" duration="617000" />
+      <workItem from="1589598411138" duration="269000" />
+      <workItem from="1589701093979" duration="48000" />
+      <workItem from="1589701246047" duration="970000" />
+      <workItem from="1589702856100" duration="929000" />
+      <workItem from="1589770122579" duration="233000" />
+      <workItem from="1589934946466" duration="9501000" />
+      <workItem from="1589955635616" duration="2217000" />
+      <workItem from="1590022418048" duration="1699000" />
+      <workItem from="1590026980177" duration="4272000" />
+      <workItem from="1590041979711" duration="6444000" />
+      <workItem from="1590369619252" duration="6552000" />
+      <workItem from="1590387486094" duration="11822000" />
+      <workItem from="1590548968833" duration="253000" />
+      <workItem from="1590585258950" duration="4554000" />
+      <workItem from="1590627179722" duration="7044000" />
+      <workItem from="1590713718617" duration="8964000" />
+      <workItem from="1590734349009" duration="5779000" />
+      <workItem from="1590887914592" duration="6207000" />
+      <workItem from="1590911810817" duration="5404000" />
+      <workItem from="1590973861695" duration="9230000" />
+      <workItem from="1590993131389" duration="10935000" />
+      <workItem from="1591059138414" duration="4189000" />
+      <workItem from="1591078857003" duration="1746000" />
+      <workItem from="1591080670687" duration="3645000" />
+      <workItem from="1591100991415" duration="970000" />
+      <workItem from="1591151509643" duration="2851000" />
+      <workItem from="1591251465796" duration="1277000" />
+      <workItem from="1591262150056" duration="233000" />
+      <workItem from="1591337733561" duration="1657000" />
+      <workItem from="1591407837199" duration="80000" />
+      <workItem from="1591408832657" duration="83000" />
+      <workItem from="1591415660333" duration="21000" />
+      <workItem from="1591415736238" duration="9000" />
+      <workItem from="1591433699576" duration="133000" />
+      <workItem from="1591435016873" duration="1122000" />
+      <workItem from="1591436252099" duration="25000" />
+      <workItem from="1592103005393" duration="67000" />
+      <workItem from="1599528966628" duration="809000" />
+      <workItem from="1599642242693" duration="28000" />
+      <workItem from="1599707746035" duration="3000" />
+      <workItem from="1599722707224" duration="541000" />
+      <workItem from="1600043004208" duration="129000" />
+      <workItem from="1600129923865" duration="13000" />
+      <workItem from="1600130813226" duration="96000" />
+      <workItem from="1600132849662" duration="285000" />
+      <workItem from="1602547487118" duration="172000" />
+      <workItem from="1602575077120" duration="2762000" />
+      <workItem from="1602580869039" duration="31000" />
+      <workItem from="1602581004616" duration="25000" />
+      <workItem from="1602581141315" duration="14000" />
+      <workItem from="1602589319227" duration="30000" />
+      <workItem from="1602830055169" duration="112000" />
+      <workItem from="1602839437557" duration="275000" />
+      <workItem from="1602909658066" duration="110000" />
+      <workItem from="1602920752566" duration="367000" />
+      <workItem from="1602922809275" duration="225000" />
+      <workItem from="1602923067609" duration="460000" />
+      <workItem from="1602923547159" duration="4000" />
+      <workItem from="1603073975520" duration="7000" />
+      <workItem from="1603594617974" duration="223000" />
+      <workItem from="1603595597575" duration="627000" />
+      <workItem from="1603617666506" duration="3000" />
+      <workItem from="1603618189064" duration="1239000" />
+      <workItem from="1603672372557" duration="605000" />
+      <workItem from="1603693756067" duration="10000" />
+      <workItem from="1603758324075" duration="38000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/webjars/demo/DemoApplicationTests.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

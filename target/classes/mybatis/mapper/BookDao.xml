@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="org.webjars.demo.dao.BookDao">
+
+  <select id="getAll" resultType="org.webjars.demo.model.Book">
+        select * from t_book
+  </select>
+
+    <select id="getOneByBid" resultType="org.webjars.demo.model.Book">
+        select * from t_book where id=#{bid}
+    </select>
+
+    <select id="blurSelBookByBo" resultType="org.webjars.demo.model.Book">
+		  		select * from t_book where bookname like concat('%',#{bookname},'%')
+  	</select>
+
+    <select id="blurSeBoByBn" resultType="org.webjars.demo.model.Book">
+        select * from t_book where bookname=#{bookname}
+    </select>
+  </mapper>

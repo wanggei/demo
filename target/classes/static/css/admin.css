@@ -1,0 +1,135 @@
+/* 导航栏样式 */
+#admin_header{
+	z-index: 1px;
+}
+.navbar-header > a{
+	color: #f0f0f0;
+	font-size: 18px;
+	padding-left: 45px;
+	
+	position: relative;
+}
+.navbar-header > a >i{
+	position: absolute;
+	top: 24x;
+	left: 6px;
+	font-size: 28px;
+	color: #CC6600;
+}
+.nav_border >span> a{
+	height: 70px;
+	line-height: 70px;
+	color: #fff;
+}
+.nav_border > a:hover,.nav_border >span> a:hover{
+	text-decoration: none;
+	color: #B3D4FC;
+}
+.nav_border > span > a >i{
+	font-size: 30px;
+}
+.nav_border > a {
+	color: #fff;
+	line-height: 70px;
+	font-size: 15px;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+
+/* 侧边栏样式 */
+#asider{
+	float: left;
+	width: 220px;
+	
+	background-color: #F0F0F0;
+	margin-top: -20px;
+	z-index: 1px;
+}
+#asider >p >span{
+	font-size: 12px;
+}
+/*#aside >.asider_config{
+	width: 200px;
+	height: 100%;
+}*/
+.asider_title{
+	height: 55px;
+	position: relative;
+	padding-left: 10px;
+}
+.asider_title > p{
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	width: 210px;
+	
+}
+.asider_title > p >span{
+	font-size: 12px;
+}
+.asider_center{
+	width: 220px;
+	height: 100%;
+	background-color: #f0f0f0;
+	z-index: -1;
+	padding-top: 145px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding-left: 10px;
+}
+.navactive{
+	color: #031F8D !important;
+	font-weight: bolder !important;
+	
+}
+.asider_center >a{
+	color: #333;
+	text-decoration: none;
+	display: block;
+}
+.asider_center >a > i{
+	padding-right: 20px;
+	color: #314CB7;
+}
+.asider_center>ul > li{
+	list-style: none;
+	padding-top: 8px;
+}
+.asider_center>ul > li >a:hover{
+	text-decoration: none;
+}
+
+.asider_center > #ul_collapse > li >a{
+	color: #333;
+	text-decoration: none;
+}
+.asider_center > #ul_collapse > li >a:hover{
+	color: #314CB7;
+	
+}
+.asider_center > #ul_collapse > li >a >i{
+	color:#314CB7 ;
+	font-weight: bolder;
+	padding-right: 10px;
+}
+
+/* 中心屏幕显示样式 */
+#nav_pager{
+	margin-left: 240px;
+	padding-right: 10px;
+}
+.breadcrumb{
+	background-color: #fff;
+	margin-bottom: 0px;
+	border-bottom: 1px solid #ccc;
+}
+#nav_pager > ol >li >a:hover{
+	text-decoration: none;
+}
+#frame{
+	z-index: -2;
+	padding-left: 240px;
+	padding-top: 145px;
+}

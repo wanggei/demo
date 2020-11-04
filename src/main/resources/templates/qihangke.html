@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+	<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org"
+
+		  xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+
+	  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.css}">
+			<link rel="stylesheet" type="text/css" href="./css/iconfont.css" th:href="@{/css/iconfont.css}"/>
+			<link rel="stylesheet" href="./css/index.css" type="text/css" th:href="@{/css/index.css}">
+			<title>腾讯书城首页</title>
+		</head>
+		<body>
+				<nav class="navbar-static-top navbar navbar-default">
+					<div class="container">
+						<div class="row">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#href">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a href="#" class="navbar-brand"><i class="iconfont icon-yewutubiao_tushuguanlixitong"></i>腾讯书城</a>
+							</div>
+							<div class="collapse navbar-collapse" id="href">
+								<ul class="nav navbar-nav ">
+									<li class="active"><a href="">首页</a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="abtn">专区<span class="caret"></span></a>
+										<ul class="dropdown-menu" id="ulbtn">
+											<li><a href="">都市</a></li>
+											<li><a href="">玄幻</a></li>
+											<li><a href="">军事</a></li>
+										</ul>
+									</li>
+									<li><a href="">书架</a></li>
+									<li><a href="">书城</a></li>
+									<li><a href="">帮助中心</a></li>
+								</ul>
+									<ul class="nav navbar-nav navbar-right">
+
+											<li> <a href="#" th:href="@{/login.html}" th:if="${session.user==null}"><span class="glyphicon glyphicon-user"></span> 登录</a></li>
+											<!--<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" th:href="@{/login.html}"><span class="glyphicon glyphicon-user"></span> 登录</a>
+
+                                                <ul class="dropdown-menu" th:if="${user} != null">
+                                                    <li><a href="user_center.html">个人中心</a></li>
+
+                                                </ul>
+                                            </li>-->
+											<li><a href="#" th:if="${session.user==null}" th:href="@{/login.html}"><span class="glyphicon glyphicon-edit"></span> 注册</a></li>
+
+
+											<li class="dropdown">
+												<a href="#" th:text="${session.user.username}" th:if="${session.user!=null}" th:href="@{/#}" class="dropdown-toggle" data-toggle="dropdown" id="aaa"><span class="glyphicon glyphicon-user"></span>登录</a>
+												<ul class="dropdown-menu" id="bbb">
+													<li shiro:hasPermission="user:admin"><a href="#" th:href="@{/admin.html}">后台管理中心</a></li>
+													<li ><a href="#" th:href="@{/user/usercenter.html}">个人中心</a></li>
+												</ul>
+											</li>
+											<!--<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" th:href="@{/login.html}"><span class="glyphicon glyphicon-user"></span> 登录</a>
+
+                                                <ul class="dropdown-menu" th:if="${user} != null">
+                                                    <li><a href="user_center.html">个人中心</a></li>
+
+                                                </ul>
+                                            </li>-->
+											<li><a href="#" th:if="${session.user!=null}" th:text="退出登录" th:href="@{/logout.html}"><span class="glyphicon glyphicon-edit"></span> 注册</a></li>
+
+
+									</ul>
+									<form action="#" method="get" class="navbar-form navbar-right hidden-sm" style="margin-right:100px;">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="书名..."/>
+											<span class="input-group-btn">
+												<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+											</span>
+										</div>
+									</form>
+							</div>
+						</div>
+						
+					</div>
+				</nav>
+				<!-- 轮播图 -->
+				<div id="carousel" class="carousel slide" data-ride="carousel">
+
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel" data-slide-to="1"></li>
+				    <li data-target="#carousel" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner" role="listbox" id="itmes">
+				    <div class="item active" data-lg-width="images/图片1.jpg" data-xs-width="images/小图-1.jpg">
+				      <!-- <img src="images/图片1.jpg" alt="..."> -->
+				    </div>
+				    <div class="item"  data-lg-width="images/图片2.jpg" data-xs-width="images/小图-2.jpg">
+				     <!-- <img src="images/图片2.jpg" alt="..."> -->
+				    </div>
+				    <div class="item" data-lg-width="images/图片3.jpg" data-xs-width="images/小图-3.jpg">
+				     <!-- <img src="images/图片3.jpg" alt="..."> -->
+				    </div>
+				  </div>
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+				<div class="container">
+					<div class="page-header">
+						<h3 class="text-center">java系列 <a href="#">更多</a></h3>
+					</div>
+					<div class="row">
+					  <div class="col-xs-6 col-md-3" th:each="book : ${books}">
+					    <div class="thumbnail">
+					      <a href="#" ><img src="images/111.jpg" alt="..." th:src="@{${book.images}}"/></a>
+					      <div class="caption">
+					       <a href="#"> <h3 th:text="${book.bookname}">逆天邪神</h3></a>
+					        <p th:text="${book.publisher_time}">从mysql到精通
+							</p>
+							 <p><a href="#" class="btn btn-primary btn-sm" role="button" onclick="backbook(this)">加入书架</a> <a href="#" class="btn btn-default btn-sm" role="button" th:href="@{/bookinfo.html(bookid=${book.id})}">书本详情</a></p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="page-header">
+						<h3 class="text-center">都市小说<a href="#">更多</a></h3> 
+					</div>
+					<div class="row">
+					  <div class="col-xs-6 col-md-3">
+					    <div class="thumbnail">
+					      <a href="#"><img src="images/111.jpg" alt="..."></a>
+					      <div class="caption">
+					       <a href="#"> <h3>逆天邪神</h3></a>
+					        <p>掌天毒之珠，承邪神之血，修逆天之力，一代邪神，君临天下！ 琅缳山，绝云崖，沧云大陆四大极恶之地之首。 绝云崖下被称作死神的墓地，
+								无数年间，坠下绝云崖者不计其数，其中甚至有三个力量通天的天王级强者，却从未有人得以生还。
+							</p>
+							 <p><a href="#" class="btn btn-primary btn-sm" role="button">加入书架</a> <a href="#" class="btn btn-default btn-sm" role="button">开始阅读</a></p>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="col-xs-6 col-md-3">
+					    <div class="thumbnail">
+					      <a href="#"><img src="images/111.jpg" alt="..." th:href="@{/images/111.jpg}"></a>
+					      <div class="caption">
+					       <a href="#"> <h3>逆天邪神</h3></a>
+					        <p>掌天毒之珠，承邪神之血，修逆天之力，一代邪神，君临天下！ 琅缳山，绝云崖，沧云大陆四大极恶之地之首。 绝云崖下被称作死神的墓地，
+					  			无数年间，坠下绝云崖者不计其数，其中甚至有三个力量通天的天王级强者，却从未有人得以生还。
+					  		</p>
+					  		 <p><a href="#" class="btn btn-primary btn-sm" role="button">加入书架</a> <a href="#" class="btn btn-default btn-sm" role="button">开始阅读</a></p>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="col-xs-6 col-md-3">
+					    <div class="thumbnail">
+					      <a href="#"><img src="images/111.jpg" alt="..." th:href="@{/images/111.jpg}"></a>
+					      <div class="caption">
+					       <a href="#"> <h3>逆天邪神</h3></a>
+					        <p>掌天毒之珠，承邪神之血，修逆天之力，一代邪神，君临天下！ 琅缳山，绝云崖，沧云大陆四大极恶之地之首。 绝云崖下被称作死神的墓地，
+					  			无数年间，坠下绝云崖者不计其数，其中甚至有三个力量通天的天王级强者，却从未有人得以生还。
+					  		</p>
+					  		 <p><a href="#" class="btn btn-primary btn-sm" role="button">加入书架</a> <a href="#" class="btn btn-default btn-sm" role="button">开始阅读</a></p>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="col-xs-6 col-md-3">
+					    <div class="thumbnail">
+					      <a href="#"><img src="images/111.jpg" alt="..." th:href="@{/images/111.jpg}"></a>
+					      <div class="caption">
+					       <a href="#"> <h3>逆天邪神</h3></a>
+					        <p>掌天毒之珠，承邪神之血，修逆天之力，一代邪神，君临天下！ 琅缳山，绝云崖，沧云大陆四大极恶之地之首。 绝云崖下被称作死神的墓地，
+					  			无数年间，坠下绝云崖者不计其数，其中甚至有三个力量通天的天王级强者，却从未有人得以生还。
+					  		</p>
+					  		<p><a href="#" class="btn btn-primary btn-sm" role="button">加入书架</a> <a href="#" class="btn btn-default btn-sm" role="button">开始阅读</a></p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="bodyfooter">
+						<span class="iconfont icon-yewutubiao_tushuguanlixitong"></span>
+						<p>腾讯出品,必是精品</p>
+						<p><a href="#">腾讯书城</a>|<a href="#">帮助</a>|<a href="#">米聊</a>|<a href="#">多看</a>|<a href="#">游戏</a>|<a href="#">路由器</a>|<a href="#">米粉卡</a>|<a href="#">政企服务</a>|<a href="#">小米天猫店</a>|<a href="#">小米集团隐私政策</a>|<a href="#">小米商城隐私政策</a>|<a href="#">商城用户协议小米</a>|<a href="#">问题反馈</a></p>
+					</div>
+				</div>
+			<script src="./lib/Jquery/jquery-3.4.1.min.js" th:src="@{/webjars/jquery/3.0.0/jquery.js}"></script>
+			<script src="./lib/bootstrap/js/bootstrap.js" th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.js}"></script>
+			<script type="text/javascript" src="js/index.js" th:src="@{/js/index.js}"></script>
+		</body>
+	</html>

@@ -1,0 +1,37 @@
+input,
+input:focus{
+	border: 1px #ccc solid  !important;
+	box-shadow: none !important;/* 阴影设置 */
+	outline: none !important;
+}
+.input-group-btn.btn:focus,
+.input-group-btn.btn.active:focus,
+.input-group-btn:active:focus,
+.input-group-btn.btn.focus,
+.input-group-btn:active.focus,
+.input-group-btn.btn.active.focus{
+	outline: none !important;
+	box-shadow: none !important;
+}
+.input-group-btn.btn:hover{
+	background: #337ab7 !important;
+	background-color: #2e6da4 !important;;
+}
+/*表单样式*/
+#table_center  {
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#table_center >table td{
+	text-align: center;
+}
+#table_center >table tr:first-child{
+	background-color: #031F8D;
+	color: white;
+}
+/*按钮样式*/
+.btn-xs, .btn-group-xs > .btn{
+	border-radius: 0px;
+	outline: none;
+	box-shadow: none;
+}

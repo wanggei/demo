@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+	  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>腾讯书城后台系统</title>
+		  <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.css}">
+		  <link rel="stylesheet" type="text/css" href="../static/css/iconfont.css" th:href="@{/css/iconfont.css}"/>
+			<link rel="stylesheet" href="css/book_back.css" type="text/css" th:href="@{/css/book_back.css}"/>
+			
+		</head>
+		<body>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<button type="button" class="btn-primary btn pull-right" id="batchArray">批量还书</button>
+					</div>
+				</div>
+				<div class="row">
+					<div id="table_center" class="table-responsive">
+						<table class="table table-bordered table-hover tab-container">
+							<tr>
+								<td><input type="checkbox" class="clickall" onclick="chall();"></td>
+								<td>图书名称</td>
+								<td>借书人</td>
+								<td>还书操作</td>
+							</tr>
+							<tr th:each="book : ${borrow_Read}">
+								<td><input type="checkbox" class="clickone" onclick="chone();" th:value="${book.bookname}"></td>
+								<td th:text="${book.bookname}" >图书名称</td>
+								<td th:text="${book.readname}">借书人</td>
+								<td><a href="#" role="button" class="btn btn-primary btn-xs" onclick="black(this)">还书</a>
+							</tr>
+						</table>
+						
+					</div>
+					
+					
+				</div>
+				
+			</div>
+
+			<script src="./lib/Jquery/jquery-3.4.1.min.js" th:src="@{/webjars/jquery/3.0.0/jquery.js}"></script>
+			<script type="text/javascript" src="js/user_center.js" th:src="@{/js/book_back.js}"></script>
+			<script src="./lib/bootstrap/js/bootstrap.js" th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.js}"></script>
+			<!--<script type="text/javascript" src="../static/js/admin.js" th:src="@{/js/admin.js}"></script>-->
+		</body>
